@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="disp">
+        <input disabled type="text" name="" id="displayInput" />
+      </div>
+      <div class="btnParent">
+        <button onclick="getVal(1)">1</button>
+        <button onclick="getVal(2)">2</button>
+        <button onclick="getVal(3)">3</button>
+        <button onclick="getVal('+')">+</button>
+        <button onclick="getVal(4)">4</button>
+        <button onclick="getVal(5)">5</button>
+        <button onclick="getVal(6)">6</button>
+        <button onclick="getVal('-')">-</button>
+        <button onclick="getVal(7)">7</button>
+        <button onclick="getVal(8)">8</button>
+        <button onclick="getVal(9)">9</button>
+        <button onclick="getVal('/')">/</button>
+        <button onclick="clearAll()">C</button>
+        <button onclick="getVal(0)">0</button>
+        <button onclick="calulate()">=</button>
+        <button onclick="getVal('*')">x</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

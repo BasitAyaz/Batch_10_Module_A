@@ -1,0 +1,127 @@
+* {
+  font-family: "Gabarito", cursive;
+  padding: 0;
+  margin: 0;
+}
+
+/* utility classes */
+.bg-black {
+  background-color: black;
+}
+.bg-white {
+  background-color: white;
+}
+.text-white {
+  color: white;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-block {
+  display: block;
+}
+.linkText {
+  color: cornflowerblue;
+  font-size: 1.2em;
+}
+.heading {
+  font-size: 3.2em;
+  text-align: center;
+}
+.subline {
+  font-size: 2em;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.p-1 {
+  padding: 10px;
+}
+.p-2 {
+  padding: 20px;
+}
+.p-3 {
+  padding: 30px;
+}
+.text-center {
+  text-align: center;
+}
+
+/* normal css */
+
+.upparnav {
+  background-color: #39393a;
+}
+.hero-section {
+  height: 100vh;
+  background-image: url("https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_medium.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.navbar {
+  background-color: #111112;
+}
+
+.navul {
+  color: white;
+  list-style: none;
+}
+.navul li {
+  display: inline-block;
+  padding: 10px;
+}
+.navul li a {
+  color: white;
+  font-size: 1.2em;
+}
+.sec2 {
+  background-image: url("https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_large.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.sec3 {
+  background-image: url("https://www.apple.com/v/home/be/images/heroes/apple-watch-series-9/hero_apple_watch_series_9_order__d0fi9mb84dci_large.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.box1 {
+  background-image: url("https://www.apple.com/v/home/be/images/promos/ipad-pro/promo_ipadpro_refresh__evi9utuixwuq_medium.jpg");
+}
+.box2 {
+  background-image: url("https://www.apple.com/v/home/be/images/promos/apple-vision-pro/promo_apple_vision_pro__f4v4zp0sum2y_medium.jpg");
+}
+.sec4-box {
+  width: 100%;
+  max-width: 550px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: top;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.uppar-space {
+  margin-top: 220px;
+}
+
+
+li button{
+    display: none;
+}
+li:hover button{
+    display: block;
+}

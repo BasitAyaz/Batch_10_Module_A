@@ -1,0 +1,31 @@
+/* h1.pera {
+  color: red;
+}
+.box {
+  color: blue;
+}
+#p1 {
+  color: green;
+}
+li a {
+  color: brown; 
+} */
+
+/* p {
+  color: red;
+  background-color: #8fcca0;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.3;
+} */
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: bold;
+  font-style: italic; */
+  /* font-size: 32px; */
+  /* font-size: 2em; */
+  /* font-size: 200%; */
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  /* text-transform: capitalize; */
+}

@@ -1,0 +1,20 @@
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+  border-radius: 150px;
+}
+.square {
+  width: 300px;
+  height: 300px;
+  background-color: green;
+}
+.rectangle {
+  width: 500px;
+  height: 300px;
+  background-color: green;
+}
+
+.border {
+  border: 2px solid black;
+}
