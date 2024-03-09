@@ -1,0 +1,14 @@
+@import "../config/variable.css";
+
+.banner {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.myCard {
+  background-color: var(--light);
+}
+.myCard:hover {
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.7);
+}

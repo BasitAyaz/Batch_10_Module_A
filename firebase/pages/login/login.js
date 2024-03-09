@@ -1,6 +1,10 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import {
+  getAuth,
+  signInWithEmailAndPassword,
+} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import {
   ref,
   set,
   getDatabase,
@@ -27,60 +31,33 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-export const database = getDatabase();
+const database = getDatabase();
+const auth = getAuth();
 
-// var db = {
-//   task: {
-//     ashgjdgjas: {
-//       task: "Todo 1",
-//     },
-//     sjkdhfkj: {
-//       task: "Todo 1",
-//     },
-//     sjdhfkjshf: {
-//       task: "Todo 1",
-//     },
-//   },
-// };
+var model = {};
 
-// db.task.agshjdgajhsd = {
-//   task: "New Task"
-// }
+var email = document.getElementById("email");
+var password = document.getElementById("password");
 
-// console.log(db.task);
-// var data = Object.keys(db.task);
-// var data = Object.values(db.task);
-// console.log(data);
-
-var inp = document.getElementById("inp");
-
-var showList = document.getElementById("showList");
-var tasks;
-
-window.add = function () {
-  var obj = {
-    text: inp.value,
-  };
-
-  obj.id = push(ref(database, "Tasks/")).key;
-
-  var reference = ref(database, `Tasks/${obj.id}`);
-
-  set(reference, obj);
+window.signIn = function (e) {
+  e.preventDefault();
+  model.email = email.value;
+  model.password = password.value;
+  console.log(model);
+  signInWithEmailAndPassword(auth, model.email, model.password)
+    .then(function (res) {
+        alert("Login Hogya")
+    //   console.log(res.user.uid, "Success Response");
+    //   model.id = res.user.uid;
+    //   var refernce = ref(database, `users/${model.id}`);
+    //   onValue(refernce, function (user) {
+    //     console.log(user.val());
+    //   });
+      email.value = "";
+      password.value = "";
+    })
+    .catch(function (err) {
+      console.log(err, "Error Response");
+      alert(err.message);
+    });
 };
-
-function renderList() {
-  for (var i = 0; i < tasks.length; i++) {
-    showList.innerHTML += `<li>${tasks[i].text}</li>`;
-  }
-}
-
-function getData() {
-  var reference = ref(database, "Tasks/");
-
-  onValue(reference, function (data) {
-    tasks = Object.values(data.val());
-    renderList();
-  });
-}
-getData();
