@@ -22,7 +22,14 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  // Firebase Configuration Object
+  apiKey: "AIzaSyBIoW1lNh-ZGAjRxgfrNwuSoooEniFS1Eo",
+  authDomain: "e-commerce-9083a.firebaseapp.com",
+  databaseURL: "https://e-commerce-9083a-default-rtdb.firebaseio.com",
+  projectId: "e-commerce-9083a",
+  storageBucket: "e-commerce-9083a.appspot.com",
+  messagingSenderId: "178354230683",
+  appId: "1:178354230683:web:3facae34406c833c6e3d3e",
+  measurementId: "G-ET4E2S5BGS"
 };
 
 // Initialize Firebase
